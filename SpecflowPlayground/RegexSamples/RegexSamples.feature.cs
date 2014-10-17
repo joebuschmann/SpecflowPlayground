@@ -296,6 +296,67 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Make \"I\" optional")]
+        public virtual void MakeIOptional()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Make \"I\" optional", ((string[])(null)));
+#line 91
+this.ScenarioSetup(scenarioInfo);
+#line hidden
+            TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Product Name"});
+            table11.AddRow(new string[] {
+                        "Galaxy IV"});
+            table11.AddRow(new string[] {
+                        "iPhone"});
+            table11.AddRow(new string[] {
+                        "Windows Phone"});
+            table11.AddRow(new string[] {
+                        "Note"});
+            table11.AddRow(new string[] {
+                        "Kindle"});
+            table11.AddRow(new string[] {
+                        "Blackberry Storm"});
+            table11.AddRow(new string[] {
+                        "iPad"});
+            table11.AddRow(new string[] {
+                        "Surface"});
+            table11.AddRow(new string[] {
+                        "Surface Pro"});
+            table11.AddRow(new string[] {
+                        "HTC One"});
+#line 92
+ testRunner.Given("the following devices", ((string)(null)), table11, "Given ");
+#line 104
+ testRunner.When("I remove the 10th item", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 105
+ testRunner.And("remove the 4th item", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 106
+ testRunner.And("remove the 3rd item", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 107
+ testRunner.And("remove the 2nd item", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 108
+ testRunner.And("remove the 1st item", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Product Name"});
+            table12.AddRow(new string[] {
+                        "Kindle"});
+            table12.AddRow(new string[] {
+                        "Blackberry Storm"});
+            table12.AddRow(new string[] {
+                        "iPad"});
+            table12.AddRow(new string[] {
+                        "Surface"});
+            table12.AddRow(new string[] {
+                        "Surface Pro"});
+#line 109
+ testRunner.Then("the following devices remain", ((string)(null)), table12, "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

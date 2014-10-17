@@ -87,3 +87,29 @@ Scenario: Support singular and plural wording
 	And the following device
 		| Product Name  |
 		| Windows Phone |
+
+Scenario: Make "I" optional
+	Given the following devices
+		| Product Name     |
+		| Galaxy IV        |
+		| iPhone           |
+		| Windows Phone    |
+		| Note             |
+		| Kindle           |
+		| Blackberry Storm |
+		| iPad             |
+		| Surface          |
+		| Surface Pro      |
+		| HTC One          |
+	When I remove the 10th item
+	And remove the 4th item
+	And remove the 3rd item
+	And remove the 2nd item
+	And remove the 1st item
+	Then the following devices remain
+		| Product Name     |
+		| Kindle           |
+		| Blackberry Storm |
+		| iPad             |
+		| Surface          |
+		| Surface Pro      |

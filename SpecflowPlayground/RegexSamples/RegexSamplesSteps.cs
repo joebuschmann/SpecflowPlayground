@@ -52,7 +52,7 @@ namespace SpecflowPlayground.RegexSamples
             table.CompareToSet(_products);
         }
 
-        [When(@"I remove the (\d*)(?:st|nd|rd|th) item")]
+        [When(@"(?:I\s)?remove the (\d+)(?:st|nd|rd|th) item")]
         public void WhenIRemoveTheItem(int index)
         {
             _products.RemoveAt(--index);
