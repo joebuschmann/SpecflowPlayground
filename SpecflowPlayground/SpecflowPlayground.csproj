@@ -54,6 +54,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeThisNotThat\TableManipulation.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TableManipulation.feature</DependentUpon>
+    </Compile>
+    <Compile Include="CodeThisNotThat\TableManipulationSteps.cs">
+      <DependentUpon>TableManipulation.feature</DependentUpon>
+    </Compile>
     <Compile Include="RegexSamples\RegexSamples.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -100,6 +108,10 @@
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="CodeThisNotThat\TableManipulation.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TableManipulation.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config">
       <SubType>Designer</SubType>
