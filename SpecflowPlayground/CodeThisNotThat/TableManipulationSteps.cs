@@ -14,11 +14,11 @@ namespace SpecflowPlayground.CodeThisNotThat
     {
         private Address _address;
 
-        [Given(@"the following address")]
-        public void GivenTheFollowingAddress(Table table)
-        {
-            Address address = table.CreateInstance<Address>();
-        }
+//        [Given(@"the following address")]
+//        public void GivenTheFollowingAddress(Table table)
+//        {
+//            Address address = table.CreateInstance<Address>();
+//        }
 
         [Given(@"the following address")]
         public void GivenTheFollowingAddress(Table table)
@@ -32,11 +32,11 @@ namespace SpecflowPlayground.CodeThisNotThat
             address.Zipcode = table.Rows[0]["Zipcode"];
         }
 
-        [Then(@"the following address should be returned by the service")]
-        public void ThenTheFollowingAddressShouldBeReturnedByTheService(Table table)
-        {
-            table.CompareToInstance(_address);
-        }
+//        [Then(@"the following address should be returned by the service")]
+//        public void ThenTheFollowingAddressShouldBeReturnedByTheService(Table table)
+//        {
+//            table.CompareToInstance(_address);
+//        }
 
         [Then(@"the following address should be returned by the service")]
         public void ThenTheFollowingAddressShouldBeReturnedByTheService(Table table)
