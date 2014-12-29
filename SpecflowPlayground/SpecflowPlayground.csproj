@@ -54,6 +54,47 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeThisNotThat\Address.cs" />
+    <Compile Include="CodeThisNotThat\Customer.cs" />
+    <Compile Include="CodeThisNotThat\OrdinalParameters.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdinalParameters.feature</DependentUpon>
+    </Compile>
+    <Compile Include="CodeThisNotThat\OrdinalParametersSteps.cs">
+      <DependentUpon>OrdinalParameters.feature</DependentUpon>
+    </Compile>
+    <Compile Include="CodeThisNotThat\ParsingTableFieldsSteps.cs">
+      <DependentUpon>ParsingTableFields.feature</DependentUpon>
+    </Compile>
+    <Compile Include="CodeThisNotThat\ParsingTableFields.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ParsingTableFields.feature</DependentUpon>
+    </Compile>
+    <Compile Include="CodeThisNotThat\ReferenceExistingEntities.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReferenceExistingEntities.feature</DependentUpon>
+    </Compile>
+    <Compile Include="CodeThisNotThat\ReferenceExistingEntitiesSteps.cs">
+      <DependentUpon>ReferenceExistingEntities.feature</DependentUpon>
+    </Compile>
+    <Compile Include="CodeThisNotThat\ServiceProxy.cs" />
+    <Compile Include="CodeThisNotThat\SharingStateBetweenBindings.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SharingStateBetweenBindings.feature</DependentUpon>
+    </Compile>
+    <Compile Include="CodeThisNotThat\SharingStateBetweenBindingsSteps.cs">
+      <DependentUpon>SharingStateBetweenBindings.feature</DependentUpon>
+    </Compile>
+    <Compile Include="CodeThisNotThat\StepArgumentTransform.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StepArgumentTransform.feature</DependentUpon>
+    </Compile>
+    <Compile Include="CodeThisNotThat\StepArgumentTransformSteps.cs" />
     <Compile Include="CodeThisNotThat\TableManipulation.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -108,6 +149,26 @@
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="CodeThisNotThat\OrdinalParameters.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>OrdinalParameters.feature.cs</LastGenOutput>
+    </None>
+    <None Include="CodeThisNotThat\ParsingTableFields.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ParsingTableFields.feature.cs</LastGenOutput>
+    </None>
+    <None Include="CodeThisNotThat\ReferenceExistingEntities.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ReferenceExistingEntities.feature.cs</LastGenOutput>
+    </None>
+    <None Include="CodeThisNotThat\SharingStateBetweenBindings.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SharingStateBetweenBindings.feature.cs</LastGenOutput>
+    </None>
+    <None Include="CodeThisNotThat\StepArgumentTransform.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>StepArgumentTransform.feature.cs</LastGenOutput>
     </None>
     <None Include="CodeThisNotThat\TableManipulation.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
