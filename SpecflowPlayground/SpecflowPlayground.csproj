@@ -145,6 +145,12 @@
     <Compile Include="SharingState\ScenarioContextSteps.cs">
       <DependentUpon>ScenarioContext.feature</DependentUpon>
     </Compile>
+    <Compile Include="Tags\ScopedBinding.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScopedBinding.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Tags\ScopedBindingSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -196,6 +202,10 @@
     <None Include="SharingState\ScenarioContext.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ScenarioContext.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Tags\ScopedBinding.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ScopedBinding.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup />
